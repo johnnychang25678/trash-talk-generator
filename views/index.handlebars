@@ -1,3 +1,4 @@
+{{test}}
 <section class="title mt-4">
   <div class="container">
     <h1 class="text-center">你想對誰說幹話？</h1>
@@ -6,13 +7,13 @@
 <section class="selections mt-4">
   <div class="container">
     <form action="/" method="POST">
-      {{!-- div for flex box   --}}
+      {{!-- selections  --}}
       <div class="selections-container d-flex justify-content-center flex-wrap">
         <div class="selection text-center">
           <div class="image-container d-flex justify-content-center align-items-center p-2">
             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
           </div>
-          <input type="radio" name="job" value="engineer" id="engineer">
+          <input type="radio" name="job" value="engineer" id="engineer" {{engineerChecker}}>
           <label for="engineer">工程師</label>
         </div>
 
@@ -20,7 +21,7 @@
           <div class="image-container d-flex justify-content-center align-items-center p-2">
             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="">
           </div>
-          <input type="radio" name="job" value="designer" id="designer">
+          <input type="radio" name="job" value="designer" id="designer" {{designerChecker}}>
           <label for="designer">設計師</label>
         </div>
 
@@ -28,7 +29,7 @@
           <div class="image-container d-flex justify-content-center align-items-center p-2">
             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="">
           </div>
-          <input type="radio" name="job" value="founder" id="founder">
+          <input type="radio" name="job" value="founder" id="founder" {{founderChecker}}>
           <label for="founder">創業家</label>
         </div>
       </div>
@@ -36,12 +37,11 @@
       {{!-- button and display --}}
       <div class="display-containers d-flex justify-content-center align-items-start mt-4">
         <button type="submit" class="ml-3 btn btn-warning">產生幹話</button>
-        <div class="display ml-4">Display trash talk here</div>
+        <div class="display alert alert-warning ml-4" role="alert">
+          <p>{{trashTalk}}</p>
+        </div>
       </div>
     </form>
-
-
-
 
 
   </div>

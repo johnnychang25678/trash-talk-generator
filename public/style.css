@@ -10,7 +10,6 @@
 .selection .image-container {
   width: 210px;
   height: 210px;
-  /* border: 1px solid black; */
   
 }
 
@@ -23,5 +22,6 @@
 .display {
   width: 500px;
   height: 200px;
-  border: 1px solid black;
+  font-size: larger;
+  font-weight: 500;
 }
