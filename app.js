@@ -8,6 +8,9 @@ const port = 3000
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
+// static file
+app.use(express.static('public'))
+
 // middleware
 app.use(express.urlencoded({ extended: true }))
 

@@ -6,15 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>幹話產生器</title>
 
+  {{!-- font --}}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
   {{!-- bootstrap css --}}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  {{!-- own css file --}}
+  <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
-
-  {{!-- partial template --}}
-  {{{body}}}
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="navbar-brand">幹話產生器</div>
+    </nav>
+  </header>
+  <main>
+    {{!-- partial template --}}
+    {{{body}}}
+  </main>
 
   {{!-- js files for bootstrap --}}
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

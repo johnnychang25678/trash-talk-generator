@@ -1,1 +1,49 @@
-<h1>Hello World</h1>
+<section class="title mt-4">
+  <div class="container">
+    <h1 class="text-center">你想對誰說幹話？</h1>
+  </div>
+</section>
+<section class="selections mt-4">
+  <div class="container">
+    <form action="/" method="POST">
+      {{!-- div for flex box   --}}
+      <div class="selections-container d-flex justify-content-center flex-wrap">
+        <div class="selection text-center">
+          <div class="image-container d-flex justify-content-center align-items-center p-2">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
+          </div>
+          <input type="radio" name="job" value="engineer" id="engineer">
+          <label for="engineer">工程師</label>
+        </div>
+
+        <div class="selection text-center">
+          <div class="image-container d-flex justify-content-center align-items-center p-2">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="">
+          </div>
+          <input type="radio" name="job" value="designer" id="designer">
+          <label for="designer">設計師</label>
+        </div>
+
+        <div class="selection text-center">
+          <div class="image-container d-flex justify-content-center align-items-center p-2">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="">
+          </div>
+          <input type="radio" name="job" value="founder" id="founder">
+          <label for="founder">創業家</label>
+        </div>
+      </div>
+
+      {{!-- button and display --}}
+      <div class="display-containers d-flex justify-content-center align-items-start mt-4">
+        <button type="submit" class="ml-3 btn btn-warning">產生幹話</button>
+        <div class="display ml-4">Display trash talk here</div>
+      </div>
+    </form>
+
+
+
+
+
+  </div>
+  </div>
+</section>
